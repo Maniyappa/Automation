@@ -24,15 +24,6 @@ public class Loginpage {
 	@CacheLookup
 	WebElement btnlogin;
 	
-	@FindBy(xpath="//a[@data-toggle='dropdown']")
-	@CacheLookup
-	WebElement btnProfile;
-	
-	@FindBy(xpath="(//a[contains(.,'Logout')])[1]")
-	@CacheLookup
-	WebElement btnlogout;
-	
-	
 	public void setUserName(String Uname)
 	{
 		txtUserName.sendKeys(Uname);
@@ -47,17 +38,5 @@ public class Loginpage {
 	{
 		btnlogin.click();
 	}
-	
-	public void clickProfile()
-	{
-		btnProfile.click();
-	}
-	
-	
-	public void clickLogout()
-	{
-		btnlogout.click();
-	}
-	
 
 }
